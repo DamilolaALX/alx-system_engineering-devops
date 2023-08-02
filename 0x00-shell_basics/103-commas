@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | sort -d | tr '\n' ',' | sed 's/,$/\n/'
+(printf '%s\n' . .. * | sort -d | awk '/^\.$/||/^\.\.$/ {print $0 "/"; next} 1' | tr '\n' ',' && echo) | sed 's/,$/\n/'
