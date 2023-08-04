@@ -1,0 +1,1 @@
+This directory contains shell scripts for managing permissions on various files and directories. These scripts are designed to help automate the process of setting, modifying, and verifying permissions on files and directories within the system.
